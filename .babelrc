@@ -1,0 +1,27 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "targets": {
+        "node": "8",
+        "browsers": [
+          "Chrome >= 52",
+          "FireFox >= 44",
+          "Safari >= 7",
+          "Explorer 11",
+          "last 4 Edge versions"
+        ]
+      },
+      "useBuiltIns": "usage"
+    }]
+  ],
+  "ignore": [
+    "node_modules",
+    "dist"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}

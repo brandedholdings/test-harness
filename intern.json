@@ -1,0 +1,19 @@
+{
+    "suites": "dist/suites/unit/**/*.js",
+    "functionalSuites": "dist/suites/integration/**/*.js",
+    "tunnel": "null",
+    "tunnelOptions": {
+        "host": "127.0.0.1:4444",
+        "path": "/wd/hub",
+        "port": 4444
+    },
+    "environments": [
+        {
+            "browserName": "chrome",
+            "version": "51",
+            "platform": [
+                "MAC"
+            ]
+        }
+    ]
+}
