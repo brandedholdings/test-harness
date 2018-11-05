@@ -1,12 +1,23 @@
 {
     "suites": "dist/suites/unit/**/*.js",
     "functionalSuites": "dist/suites/integration/**/*.js",
+
+    "defaultTimeout": 300000,
+
+    "functionalTimeouts": {
+        "connectTimeout": 300000,
+        "executeAsync": 300000,
+        "find": 60000,
+        "pageLoad": 60000
+    },
+
     "tunnel": "null",
     "tunnelOptions": {
         "host": "127.0.0.1:4444",
         "path": "/wd/hub",
         "port": 4444
     },
+
     "environments": [
         {
             "browserName": "chrome"
