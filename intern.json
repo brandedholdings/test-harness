@@ -9,11 +9,7 @@
     },
     "environments": [
         {
-            "browserName": "chrome",
-            "version": "51",
-            "platform": [
-                "MAC"
-            ]
+            "browserName": "chrome"
         }
     ]
 }

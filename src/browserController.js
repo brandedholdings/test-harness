@@ -125,7 +125,7 @@ export default class BrowserController {
             this.clickHelper(selector);
         }
 
-        this.remote = this.remote.end();
+        this.remote = this.remote.sleep(1000).end();
 
         return this;
     }
@@ -152,7 +152,7 @@ export default class BrowserController {
                 .then(() => new Promise(resolve => setTimeout(resolve, delay)));
         }
 
-        this.remote = this.remote.end();
+        this.remote = this.remote.sleep(1000).end();
 
         return this;
     }
@@ -177,4 +177,6 @@ export default class BrowserController {
         this.remote = this.remote.dismissAlert();
         return this;
     }
+
+    // TODO dismiss push/location elevation prompts
 };

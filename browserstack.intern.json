@@ -1,0 +1,23 @@
+{
+    "suites": "dist/suites/unit/**/*.js",
+    "functionalSuites": "dist/suites/integration/**/*.js",
+
+    "capabilities": {
+        "browserstack.local": false
+    },
+
+    "tunnel": "BrowserStackTunnel",
+    "tunnelOptions": {
+        "verbose": true,
+        "username": "brandedholdingsd",
+        "accessKey": "hWxybgyzZVf26mvczsDc"
+    },
+
+    "environments": [
+        {
+            "browserName": "chrome"
+        }
+    ],
+
+    "excludeInstrumentation": true
+}
